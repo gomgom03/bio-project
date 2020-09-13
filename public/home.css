@@ -1,0 +1,211 @@
+body, html {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Open Sans', serif;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    background: url("./img/bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#freeSpace {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.center-vert {
+    align-items: center;
+}
+
+.center-horz {
+    justify-content: center;
+}
+
+.color-1 {
+    color: black;
+}
+
+.color-2 {
+    color: #80ED99;
+}
+
+.color-3 {
+    color: #38A3A5;
+}
+
+.color-4 {
+    color: #22577A;
+}
+
+.color-5 {
+    color: #57CC99;
+}
+
+.color-6 {
+    color: white;
+}
+
+.color-7 {
+    color: #C7F9CC;
+}
+
+.border {
+    border-style: solid;
+    border-width: 0.3vw;
+}
+
+.border-1 {
+    border-color: black;
+}
+
+.border-2 {
+    border-color: #80ED99;
+}
+
+.border-3 {
+    border-color: #38A3A5;
+}
+
+.border-4 {
+    border-color: #22577A;
+}
+
+.border-5 {
+    border-color: #57CC99;
+}
+
+.border-6 {
+    border-color: white;
+}
+
+.border-7 {
+    border-color: #C7F9CC;
+}
+
+.bg-1 {
+    background-color: black;
+}
+
+.bg-2 {
+    background-color: #80ED99;
+}
+
+.bg-3 {
+    background-color: #38A3A5;
+}
+
+.bg-4 {
+    background-color: #22577A;
+}
+
+.bg-5 {
+    background-color: #57CC99;
+}
+
+.bg-6 {
+    background-color: white;
+}
+
+.bg-7 {
+    background-color: #C7F9CC;
+}
+
+.bg-t {
+    background-color: transparent;
+}
+
+.text-1 {
+    font-size: 8vw;
+}
+
+.text-2 {
+    font-size: 2vw;
+}
+
+.text-3 {
+    font-size: 3vw;
+}
+
+.text-4 {
+    font-size: 4vw;
+}
+
+.text-5 {
+    font-size: 5vw;
+}
+
+.text-6 {
+    font-size: 6vw;
+}
+
+.text-7 {
+    font-size: 7vw;
+}
+
+.text-8 {
+    font-size: 8vw;
+}
+
+.quadrant {
+    width: 50%;
+    height: 50%;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 0.5vw;
+}
+
+.transition {
+    transition: opacity 0.6s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hoverable-2 {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.hoverable-2:hover {
+    font-size: 2.1vw;
+}
+
+.hoverable-4 {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.hoverable-4:hover {
+    font-size: 4.1vw;
+}
+
+.bold {
+    font-weight: bold;
+}
