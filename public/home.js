@@ -13,8 +13,8 @@ const pages = {
         divElem("rounded quadrant d-flex center-vert center-horz", null, null, null, [buttonElem("Nucleic Acids", "nuclsHome", "btn bg-7 border-4 color-1 rounded text-4 hoverable-4", 8, 8)]),
     ]),
     lipidsHome: divElem("bg-t rounded d-flex f-wrap transition hidden center-horz", 8, 8, null, [
-        divElem("d-flex center-vert center-horz transparent text-7 bold", 10, 3, "Lipids", []),
-        divElem("d-flex center-vert center-horz transparent", 10, 7, null, []),
+        divElem("d-flex center-vert center-horz transparent text-4 bold", 10, 2, "Lipids", []),
+        divElem("d-flex center-vert center-horz transparent", 10, 8, null, []),
     ]),
     carbsHome: divElem("bg-t rounded d-flex f-wrap transition hidden center-horz", 8, 8, null, [
         divElem("d-flex center-vert center-horz transparent text-7 bold", 10, 3, "Carbohydrates", []),
@@ -39,6 +39,7 @@ const imgPaths = {
         "hydrogen",
         "structure",
         "structure-lipids",
+        "lipids-img",
         "typeofcovalentbond",
         "covalentbond-lipids",
         "fat",
@@ -69,6 +70,7 @@ const imgPaths = {
         "hydrogen",
         "structure",
         "structure-carbs",
+        "carbs-img",
         "typeofcovalentbond",
         "covalentbond-carbs",
         "monosaccharide",
@@ -106,6 +108,7 @@ const imgPaths = {
         "nitrogen",
         "structure",
         "structure-nucls",
+        "nucls-img",
         "typeofcovalentbond",
         "covalentbond-nucls",
         "examples",
@@ -124,6 +127,7 @@ const imgPaths = {
         "nitrogen",
         "structure",
         "structure-proteins",
+        "protein-img",
         "typeofcovalentbond",
         "covalentbond-proteins",
         "examples",
@@ -236,7 +240,7 @@ function create2d(paths, pg) {
         World.add(world, temp);
         cur++;
         cur === len ? cur = 0 : null;
-    }, 1750)
+    }, 2500)
     // create engine
     var engine = Engine.create(),
         world = engine.world;
@@ -247,8 +251,8 @@ function create2d(paths, pg) {
         element: pg.childNodes[1],
         engine: engine,
         options: {
-            width: canvasElemWidth * 2,
-            height: canvasElemWidth / 8 * 6
+            width: canvasElemWidth * 2 * 1.1,
+            height: canvasElemWidth / 8 * 6 * 1.1
         }
     });
     render.options.wireframes = false;
@@ -269,8 +273,8 @@ function create2d(paths, pg) {
     ]);
 
     World.add(world, [
-        Bodies.rectangle(-200, 120, 2000, 20, { isStatic: true, angle: Math.PI * 0.026 }),
-        Bodies.rectangle(1000, 400, 2200, 20, { isStatic: true, angle: -Math.PI * 0.026 }),
+        Bodies.rectangle(-200, 180, 2000, 20, { isStatic: true, angle: Math.PI * 0.015 }),
+        Bodies.rectangle(1000, 400, 2200, 20, { isStatic: true, angle: -Math.PI * 0.015 }),
         //Bodies.rectangle(300, 560, 600, 20, { isStatic: true, angle: Math.PI * 0.04 })
     ]);
     Events.on(render, "beforeRender", () => {
